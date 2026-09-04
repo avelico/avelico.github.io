@@ -6,7 +6,7 @@
 4
 <meta charset="UTF-8">
 5
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 6
  
 7
@@ -14,296 +14,482 @@
 8
  
 9
-https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+https://fonts.googleapis.com
 10
- 
+https://fonts.gstatic.com
 11
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 12
  
 13
-body{
+<style>
 14
-font-family:'Poppins',sans-serif;
+*{
 15
 margin:0;
 16
-background:#f8fafc;
+padding:0;
 17
-color:#0f172a;
+box-sizing:border-box;
 18
 }
 19
  
 20
-.hero{
+body{
 21
-background:#0f172a;
+font-family:'Poppins',sans-serif;
 22
-color:white;
+background:#f8fafc;
 23
-padding:60px 20px;
+color:#0f172a;
 24
-text-align:center;
+line-height:1.6;
 25
 }
 26
  
 27
-.hero h1{
+.hero{
 28
-font-size:42px;
+background:#0f172a;
 29
-margin-bottom:10px;
-30
-}
-31
- 
-32
-.hero p{
-33
-font-size:20px;
-34
-}
-35
- 
-36
-.btn{
-37
-display:inline-block;
-38
-background:#f97316;
-39
 color:white;
+30
+text-align:center;
+31
+padding:80px 20px;
+32
+}
+33
+ 
+34
+.hero h1{
+35
+font-size:3rem;
+36
+margin-bottom:15px;
+37
+}
+38
+ 
+39
+.hero p{
 40
-padding:15px 30px;
+font-size:1.2rem;
 41
-border-radius:10px;
+margin-bottom:25px;
 42
-text-decoration:none;
+}
 43
-font-weight:bold;
+ 
 44
-margin-top:20px;
+.btn{
 45
-}
+display:inline-block;
 46
- 
+background:#f97316;
 47
-.section{
+color:white;
 48
-max-width:900px;
-49
-margin:auto;
-50
-padding:40px 20px;
-51
-}
-52
- 
-53
-.social{
-54
-display:flex;
-55
-flex-wrap:wrap;
-56
-gap:15px;
-57
-justify-content:center;
-58
-}
-59
- 
-60
-.social a{
-61
-background:white;
-62
-padding:15px 20px;
-63
-border-radius:10px;
-64
 text-decoration:none;
+49
+padding:15px 30px;
+50
+border-radius:10px;
+51
+font-weight:bold;
+52
+transition:.3s;
+53
+}
+54
+ 
+55
+.btn:hover{
+56
+background:#ea580c;
+57
+}
+58
+ 
+59
+.section{
+60
+max-width:900px;
+61
+margin:auto;
+62
+padding:50px 20px;
+63
+}
+64
+ 
 65
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+.section h2{
 66
-color:#0f172a;
+text-align:center;
 67
-font-weight:600;
+margin-bottom:25px;
 68
 }
 69
  
 70
-form{
+.social{
 71
-background:white;
+display:grid;
 72
-padding:30px;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 73
-border-radius:15px;
+gap:15px;
 74
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
 75
-}
+ 
 76
- 
+.social a{
 77
-input{
+background:white;
 78
-width:100%;
+color:#0f172a;
 79
-padding:12px;
+text-decoration:none;
 80
-margin-bottom:15px;
+padding:18px;
 81
-border:1px solid #ddd;
-82
-border-radius:8px;
-83
-}
-84
- 
-85
-button{
-86
-background:#f97316;
-87
-color:white;
-88
-border:none;
-89
-padding:15px;
-90
-width:100%;
-91
-border-radius:10px;
-92
-font-size:18px;
-93
-cursor:pointer;
-94
-}
-95
- 
-96
-.footer{
-97
 text-align:center;
-98
-padding:30px;
-99
-font-size:14px;
-100
+82
+border-radius:12px;
+83
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+84
+font-weight:600;
+85
+transition:.3s;
+86
 }
+87
+ 
+88
+.social a:hover{
+89
+transform:translateY(-3px);
+90
+}
+91
+ 
+92
+.form-card{
+93
+background:white;
+94
+padding:30px;
+95
+border-radius:15px;
+96
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+97
+}
+98
+ 
+99
+input{
+100
+width:100%;
 101
- 
+padding:12px;
 102
-</style>
+margin-bottom:15px;
 103
-</head>
+border:1px solid #d1d5db;
 104
- 
+border-radius:8px;
 105
-<body>
+font-size:16px;
 106
- 
+}
 107
-<section class="hero">
+ 
 108
-<h1>🎁 Participa y Gana</h1>
+label{
 109
-<p>Sigue nuestras redes y participa por $500 MXN</p>
+display:block;
 110
-#registroParticipar Ahora</a>
+margin-bottom:8px;
 111
-</section>
+font-weight:600;
 112
- 
+}
 113
-<section class="section">
+ 
 114
- 
+.checkbox{
 115
-<h2>Paso 1: Síguenos</h2>
+margin:15px 0;
 116
- 
+}
 117
-<div class="social">
+ 
 118
-#Facebook</a>
+button{
 119
-#Instagram</a>
+width:100%;
 120
-#TikTok</a>
+border:none;
 121
-#YouTube</a>
+background:#f97316;
 122
-</div>
+color:white;
 123
- 
+font-size:18px;
 124
-</section>
+padding:15px;
 125
- 
+border-radius:10px;
 126
-<section class="section" id="registro">
+cursor:pointer;
 127
- 
+transition:.3s;
 128
-<h2>Paso 2: Registra tu participación</h2>
+}
 129
  
 130
-<form>
+button:hover{
 131
- 
+background:#ea580c;
 132
-<input type="text" placeholder="Nombre completo">
+}
 133
  
 134
-<input type="tel" placeholder="WhatsApp">
+.premio{
 135
- 
+text-align:center;
 136
-<input type="text" placeholder="Usuario de Instagram">
+background:white;
 137
- 
+padding:30px;
 138
-<input type="text" placeholder="Usuario de Facebook">
+border-radius:15px;
 139
- 
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 140
-<input type="email" placeholder="Correo electrónico">
+}
 141
  
 142
-<button type="submit">
+.footer{
 143
-Participar en el Sorteo
+background:#0f172a;
 144
-</button>
+color:white;
 145
- 
+text-align:center;
 146
-</form>
+padding:25px;
 147
- 
+margin-top:40px;
 148
-</section>
+}
 149
  
 150
-<div class="footer">
+@media(max-width:768px){
 151
-Ganador anunciado en nuestras redes sociales.
+.hero h1{
 152
-</div>
+font-size:2rem;
 153
- 
+}
 154
-</body>
+}
 155
+</style>
+156
+</head>
+157
+ 
+158
+<body>
+159
+ 
+160
+<section class="hero">
+161
+<h1>🎁 Participa y Gana</h1>
+162
+<p>Sigue nuestras redes sociales y participa por un premio de $500 MXN</p>
+163
+ 
+164
+#registro
+165
+Participar Ahora
+166
+</a>
+167
+</section>
+168
+ 
+169
+<section class="section">
+170
+ 
+171
+<h2>✅ Paso 1: Síguenos</h2>
+172
+ 
+173
+<div class="social">
+174
+ 
+175
+URL_FACEBOOK
+176
+🔵 Facebook
+177
+</a>
+178
+ 
+179
+https://www.instagram.com/lafrescavictoria?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==
+180
+📸 Instagram
+181
+</a>
+182
+ 
+183
+URL_TIKTOK
+184
+🎵 TikTok
+185
+</a>
+186
+ 
+187
+URL_YOUTUBE
+188
+▶️ YouTube
+189
+</a>
+190
+ 
+191
+</div>
+192
+ 
+193
+</section>
+194
+ 
+195
+<section class="section">
+196
+ 
+197
+<div class="premio">
+198
+<h2>🏆 Premio</h2>
+199
+<p><strong>$500 MXN</strong></p>
+200
+<p>Fecha del sorteo: 31 de octubre de 2026</p>
+201
+</div>
+202
+ 
+203
+</section>
+204
+ 
+205
+<section class="section" id="registro">
+206
+ 
+207
+<h2>✅ Paso 2: Registra tu participación</h2>
+208
+ 
+209
+<div class="form-card">
+210
+ 
+211
+<form>
+212
+ 
+213
+<label>Nombre completo</label>
+214
+<input type="text" placeholder="Escribe tu nombre">
+215
+ 
+216
+<label>WhatsApp</label>
+217
+<input type="tel" placeholder="Tu número">
+218
+ 
+219
+<label>Usuario de Instagram</label>
+220
+<input type="text" placeholder="@usuario">
+221
+ 
+222
+<label>Usuario de Facebook</label>
+223
+<input type="text" placeholder="Tu perfil">
+224
+ 
+225
+<label>Correo electrónico</label>
+226
+<input type="email" placeholder="correo@ejemplo.com">
+227
+ 
+228
+<div class="checkbox">
+229
+<input type="checkbox" required>
+230
+Confirmo que sigo las redes sociales indicadas.
+231
+</div>
+232
+ 
+233
+<button type="submit">
+234
+🎉 Participar en el Sorteo
+235
+</button>
+236
+ 
+237
+</form>
+238
+ 
+239
+</div>
+240
+ 
+241
+</section>
+242
+ 
+243
+<footer class="footer">
+244
+Ganador anunciado en nuestras redes sociales.
+245
+</footer>
+246
+ 
+247
+</body>
+248
 </html>
